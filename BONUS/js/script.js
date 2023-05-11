@@ -41,7 +41,7 @@ if (triangoloScelto == "isoscele"){
 
    areaTriangoloScelto = lato * altezza / 2
 
-}else if (triangoloScelto = "equilatero"){
+}else if (triangoloScelto == "equilatero"){
    
    radiceDiTre = Math.sqrt(3)
 
@@ -56,14 +56,14 @@ areaTriangoloScelto = (lato * altezza) / 2
 
 }
 
-
-
-
-
-
-
-
 document.getElementById("area").innerHTML = areaTriangoloScelto
+
+
+
+
+
+
+
 
 
 
