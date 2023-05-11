@@ -11,46 +11,37 @@ let base;
 
 let radiceDiTre;
 
-if (triangoloScelto = "isoscele"){
+if (triangoloScelto == "isoscele"){
 
    lato = prompt("definisci la lunghezza di uno qualunque dei lati del triangolo")
 
-}
+}else if (triangoloScelto == "equilatero"){ 
 
-else if (triangoloScelto = "equilatero"){ 
+   lato = prompt("definisci la lunghezza di uno qualunque dei lati del triangolo")
 
-    lato = prompt("definisci la lunghezza di uno qualunque dei lati del triangolo")
+}else if (triangoloScelto == "scaleno"){
 
-}
-
-else if (triangoloScelto = "scaleno") {
-   
-    base = prompt("inserisci la lunghezza della base del triangolo")
+   lato = prompt("inserisci la lunghezza della base del triangolo")
    
 }
 
 let altezza
 
-if (triangoloScelto = "isoscele"){
+if (triangoloScelto == "isoscele"){
 
   altezza = prompt("inserisci l'altezza relativa al lato scelto")
 
-}
-
-else if (triangoloScelto = "scaleno"){
+}else if (triangoloScelto == "scaleno"){
  
   altezza = prompt("inserisci l'altezza relativa alla base del tuo triangolo")
 
 }
 
-
-if (triangoloScelto = "isoscele"){
+if (triangoloScelto == "isoscele"){
 
    areaTriangoloScelto = lato * altezza / 2
 
-}
-
-else if (triangoloScelto = "equilatero"){
+}else if (triangoloScelto = "equilatero"){
    
    radiceDiTre = Math.sqrt(3)
 
@@ -59,13 +50,9 @@ else if (triangoloScelto = "equilatero"){
    areaTriangoloScelto = ((radiceDiTre / 4) * (lato ** 2))
 
 
-}
+}else if (triangoloScelto == "scaleno"){
 
-
-
-else if (triangoloScelto = "scaleno"){
-
-areaTriangoloScelto = (base * altezza) / 2
+areaTriangoloScelto = (lato * altezza) / 2
 
 }
 
