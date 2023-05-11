@@ -1,4 +1,4 @@
-let triangoloScelto = prompt("inserisci il nome del tuo triangolo scegliendo tra Scaleno, Equilatero e Isoscele");
+let triangoloScelto = prompt("inserisci il nome del tuo triangolo scegliendo tra scaleno, equilatero e isoscele");
 
 document.getElementById("tuoTriangolo").innerHTML = triangoloScelto;
 
